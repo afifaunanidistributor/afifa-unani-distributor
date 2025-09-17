@@ -10,6 +10,22 @@
                 "quantity":"60 Capsule"
             },
             {
+              "productName": "MAJUN ITRILAAL",
+              "companyName": "Hermas",
+              "category":  "Majun",
+              "price": 230.00,
+              "description":"vitiligo(skin diseases)",
+              "quantity":"250 gram"
+            },
+            {
+              "productName": "HERMACILIN",
+              "companyName": "Hermas",
+              "category":  "Syrup",
+              "price": 125.00,
+              "description":"Dry or Phelgamatic",
+              "quantity":"200 ML"
+            },
+            {
               "productName": "Humdum Oil",
               "companyName": "Kabeer",
               "category":  "Oil",
@@ -45,6 +61,7 @@
                 "description": "Neem extract capsules for immunity support.",
                 "quantity": "200ml"
             }
+            
         ]
     }
 ]
