@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afifa Unani Distributor </title>
+  <link rel="stylesheet" href="HomePage.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Afifa Unani Distributor</div>
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="add-product.html">Add Product</a>
+    </nav>
+  </header>
+
+  <main>
+    
+    <h1>Auliya Products</h1>
+  <div class="product-list" id="product-list"></div>
+
+  <script>
+    function addToCart(productName, price) {
+      alert(`${productName} added to cart! Price: ₹${price}`);
+    }
+
+    fetch("ProductData.json")
+      .then(response => response.json())
+      .then(data => {
+        const productList = document.getElementById("product-list");
+
+        // Filter products by company name "Auliya"
+        const products = data[0].data.filter(p => p.companyName.toLowerCase() === "auliya");
+
+        products.forEach(item => {
+          const productDiv = document.createElement("div");
+          productDiv.classList.add("product");
+
+          productDiv.innerHTML = `
+            <h3>${item.productName}</h3>
+            <p class="company"><strong>Company:</strong> ${item.companyName}</p>
+            <p class="category"><strong>Category:</strong> ${item.category}</p>
+            <p class="description">${item.description}</p>
+            <p class="price">₹${item.price.toFixed(2)}</p>
+            <p class="quantity"><strong>Quantity:</strong> ${item.quantity}</p>
+            <button onclick="addToCart('${item.productName}', ${item.price})">Add to Cart</button>
+          `;
+
+          productList.appendChild(productDiv);
+        });
+      })
+      .catch(err => console.error("Error loading products:", err));
+  </script>
+</main>
+
+</body>
+</html>

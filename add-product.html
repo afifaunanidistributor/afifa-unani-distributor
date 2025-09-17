@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Product - Hermas Herbal</title>
+  <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+
+   <header>
+    <div class="logo">Afifa Unani Distributor</div>
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="add-product.html">Add Product</a>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section id="loginSection" class="cart-page">
+    <h1>Admin Login</h1>
+    <p style="padding: 0px 0px 8px ;">Enter password to continue:</p>
+    <input type="password" id="adminPassword" placeholder="Enter password">
+    <button onclick="checkLogin()">Login</button>
+    <p id="loginMessage" style="color:red;">"Only For Admin access"</p>
+  </section>
+
+  <!-- Add Product Form -->
+  <section id="productSection" class="cart-page" style="display:none;">
+    <h1>Add a New Product</h1>
+    <form id="productForm">
+      <label>Product Name:</label><br>
+      <input type="text" id="pname" required><br><br>
+
+      <label>Company Name:</label><br>
+      <select id="pcompany" required>
+        <option value="Hermas">Hermas</option>
+        <option value="Auliya">Auliya</option>
+        <option value="Kabeer">Kabeer</option>
+      </select><br><br>
+
+      <label>Category:</label><br>
+      <select id="pcategory" required>
+        <option value="Roghan">Roghan</option>
+        <option value="Capsule">Capsule</option>
+        <option value="Oil">Oil</option>
+        <option value="Powder">Powder</option>
+        <option value="Safoof">Safoof</option>
+        <option value="ARQ">ARQ</option>
+        <option value="Majun">Majun</option>
+        <option value="Itrifal">Itrifal</option>
+        <option value="Jawarish">Jawarish</option>
+        <option value="Khameera">Khameera</option>
+        <option value="Habbe">Habbe</option>
+        <option value="Qurs">Qurs</option>
+        <option value="Syrup">Syrup</option>
+        <option value="Hub">Hub</option>
+        <option value="Cream">Cream</option>
+        <option value="Soap">Soap</option>
+      </select><br><br>
+
+      <label>Price (₹):</label><br>
+      <input type="number" id="pprice" required><br><br>
+
+      <label>Description:</label><br>
+      <textarea id="pdesc" rows="3" required></textarea><br><br>
+
+      <label>Quantity (e.g. 100ml / 30 tablets):</label><br>
+      <input type="text" id="pqty" required><br><br>
+
+      <button type="button" onclick="generateProduct()">Generate Product Code</button>
+    </form>
+
+    <h2>Generated Product Code</h2>
+    <textarea id="productCode" rows="12" style="width:100%;"></textarea><br>
+    <button onclick="copyCode()">📋 Copy Code</button>
+  </section>
+
+  <script>
+    const ADMIN_PASSWORD = "hermas123";
+
+    function checkLogin() {
+      let entered = document.getElementById("adminPassword").value;
+      if (entered === ADMIN_PASSWORD) {
+        document.getElementById("loginSection").style.display = "none";
+        document.getElementById("productSection").style.display = "block";
+      } else {
+        document.getElementById("loginMessage").innerText = "❌ Wrong password!";
+      }
+    }
+
+    function generateProduct() {
+      let name = document.getElementById("pname").value;
+      let company = document.getElementById("pcompany").value;
+      let category = document.getElementById("pcategory").value;
+      let price = document.getElementById("pprice").value;
+      let desc = document.getElementById("pdesc").value;
+      let qty = document.getElementById("pqty").value;
+
+      let code = `{
+              "productName": "${name}",
+              "companyName": "${company}",
+              "category":  "${category}",
+              "price": ${parseFloat(price).toFixed(2)},
+              "description":"${desc}",
+              "quantity":"${qty}"
+            },`;
+
+      document.getElementById("productCode").value = code;
+    }
+
+    function copyCode() {
+      let textarea = document.getElementById("productCode");
+      textarea.select();
+      textarea.setSelectionRange(0, 99999); // mobile
+      document.execCommand("copy");
+      alert("✅ Code copied to clipboard!");
+    }
+  </script>
+
+</body>
+</html>

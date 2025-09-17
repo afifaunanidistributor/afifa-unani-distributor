@@ -1,0 +1,50 @@
+[
+    {
+        "data": [
+            {
+                "productName": "LEAN CAPSULE",
+                "companyName": "Auliya",
+                "category":  "Capsule",
+                "price": 275.00,
+                "description":"Boost Fat Loss",
+                "quantity":"60 Capsule"
+            },
+            {
+              "productName": "Humdum Oil",
+              "companyName": "Kabeer",
+              "category":  "Oil",
+              "price": 100.00,
+              "description":"Relieves Muscular and joint pins",
+              "quantity":"50 ml"
+            },
+            
+
+
+
+            {
+                "productName": "DIVA Herbal Hair Oil",
+                "companyName": "Auliya",
+                "category":  "Oil",
+                "price": 144.00,
+                "description":"Stop greying hair and Anti-dandruff",
+                "quantity":"100 ml"
+            },
+            {
+                "productName": "DIVA Herbal Cleanser",
+                "companyName": "Auliya",
+                "category":  "Oil",
+                "price": 94.00,
+                "description":"Support Hair Growth",
+                "quantity":"100 ml"
+            },
+            {
+                "productName": "Neem oil",
+                "companyName": "Kabeer",
+                "category": "Supplements",
+                "price": 20.50,
+                "description": "Neem extract capsules for immunity support.",
+                "quantity": "200ml"
+            }
+        ]
+    }
+]

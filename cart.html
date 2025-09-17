@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Hermas Herbal</title>
+  <link rel="stylesheet" href="cart.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Afifa Unani Distributor</div>
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="add-product.html">Add Product</a>
+    </nav>
+  </header>
+  <main class="checkout-page">
+    <h1>Checkout</h1>
+
+    <!-- Customer Info -->
+    <form id="checkoutForm" method="POST" action="https://formspree.io/f/xwpndepq">
+      <label>Name:</label><br>
+      <input type="text" name="customer_name" id="custName" required><br><br>
+
+      <label>Phone:</label><br>
+      <input type="text" name="customer_phone" id="custPhone" required><br><br>
+
+      <label>Address:</label><br>
+      <textarea name="customer_address" id="custAddress" rows="3" required></textarea><br><br>
+
+      <!-- Hidden fields for email -->
+      <input type="hidden" name="order_list" id="orderList">
+      <input type="hidden" name="order_total" id="orderTotal">
+
+      <h2>Order Summary</h2>
+      <!-- Editable order list -->
+      <div id="orderSummary"></div>
+      <h3 id="checkoutTotal">Total: ₹0.00</h3>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+
+</body>
+</html>
