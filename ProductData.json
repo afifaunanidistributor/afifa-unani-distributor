@@ -9,6 +9,30 @@
                 "description":"Boost Fat Loss",
                 "quantity":"60 Capsule"
             },
+            {
+              "productName": "CAPSULE SHAHTARA",
+              "companyName": "Kabeer",
+              "category":  "Capsule",
+              "price": 130.00,
+              "description":"Skin Diaorder, Liver Disorder",
+              "quantity":"40"
+            },
+            {
+              "productName": "MOMYAI",
+              "companyName": "Hermas",
+              "category":  "Capsule",
+              "price": 205.00,
+              "description":"Gernal Weakness, Anaemia, Diabetic Neuropathy, Chronic illiness, Post Chemotherapy",
+              "quantity":"30"
+            },
+            {
+              "productName": "MAJUN DABIDULWARD",
+              "companyName": "Hermas",
+              "category":  "Majun",
+              "price": 160.00,
+              "description":"Managing Digestive & LIver Aliments",
+              "quantity":"125gm"
+            },
             
                 {
               "productName": "ZAHEEN",
