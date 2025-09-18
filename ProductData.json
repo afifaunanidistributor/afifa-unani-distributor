@@ -10,6 +10,30 @@
                 "quantity":"60 Capsule"
             },
             {
+              "productName": "JAWARISH HERMAS",
+              "companyName": "Hermas",
+              "category":  "Jawarish",
+              "price": 135.00,
+              "description":"Clear Solution For Acid Peptic Disorder",
+              "quantity":"125gm"
+            },
+            {
+              "productName": "MASHROOB AMLA",
+              "companyName": "Hermas",
+              "category":  "Syrup",
+              "price": 115.00,
+              "description":"Antibilious, Immunity, Vital Function, Digestion",
+              "quantity":"200ml"
+            },
+            {
+              "productName": "LIVE TONE",
+              "companyName": "Hermas",
+              "category":  "Syrup",
+              "price": 110.00,
+              "description":"Hepatitis, Loss Of Appetite, Jaundice Anaemia, Urticaria, Biliary Disorder",
+              "quantity":"200ml"
+            },
+            {
               "productName": "NIA NEEM MIX ",
               "companyName": "Auliya",
               "category":  "Soap",
