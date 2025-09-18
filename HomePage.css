@@ -152,11 +152,12 @@ header nav a:hover {
 .intro p {
   font-size: 16px;
   color: #555;
-}
+} 
 
 /* Company Section */
 .companies {
-  padding: 30px;
+  padding: 30px; 
+  
   text-align: center;
 }
 .companies h2 {

@@ -9,6 +9,136 @@
                 "description":"Boost Fat Loss",
                 "quantity":"60 Capsule"
             },
+            
+                {
+              "productName": "ZAHEEN",
+              "companyName": "Hermas",
+              "category":  "Majun",
+              "price": 240.00,
+              "description":"Brain Tonic",
+              "quantity":"350gm"
+            },   
+                {
+              "productName": "MASAFFIE SYRUP",
+              "companyName": "Hermas",
+              "category":  "Syrup",
+              "price": 120.00,
+              "description":"For Skin Diseases, Acne Vulgaris, Bolis, Urticaria",
+              "quantity":"200ml"
+            },
+                {
+              "productName": "PHELGONILE TABLET",
+              "companyName": "Hermas",
+              "category":  "Tablet",
+              "price": 85.00,
+              "description":"Allergic Rhinitis, Common Cold, Sinusitis, Bronchitis",
+              "quantity":"60"
+            },
+                {
+              "productName": "PHELGONILE SYRUP",
+              "companyName": "Hermas",
+              "category":  "Syrup",
+              "price": 140.00,
+              "description":"Allergic Rhinitis, Common Cold, Sinusitis, Bronchitis",
+              "quantity":"200ml"
+            },
+                {
+              "productName": "UNALKA SYRUP ",
+              "companyName": "Hermas",
+              "category":  "Syrup",
+              "price": 150.00,
+              "description":"Hyperacidity, Burning, Vomitimg, Nausea & UTI's Disorder",
+              "quantity":"200ml"
+            },
+                {
+              "productName": "MUNDAMIL POWDER",
+              "companyName": "Hermas",
+              "category":  "Powder",
+              "price": 100.00,
+              "description":"cHRONIC Non Healing Ulcers {Vericose & Diabetic Wound",
+              "quantity":"15gm"
+            },
+                {
+              "productName": "SAFOOf FALASAFA",
+              "companyName": "Hermas",
+              "category":  "Powder",
+              "price": 160.00,
+              "description":"Improve Functions Of Brain Heart & Liver",
+              "quantity":"60gm"
+            },
+                {
+              "productName": "SAFOOF DABEEDULWARD",
+              "companyName": "Hermas",
+              "category":  "Powder",
+              "price": 190.00,
+              "description":"Keeps Liver Healthy",
+              "quantity":"60gm"
+            },
+                {
+              "productName": "SFOOF IKSIR HISATH",
+              "companyName": "Hermas",
+              "category":  "Powder",
+              "price": 140.00,
+              "description":"Stone In Urinary System",
+              "quantity":"60gm"
+            },
+                {
+              "productName": "SFOOF KISHNIZI",
+              "companyName": "Hermas",
+              "category":  "Powder",
+              "price": 130.00,
+              "description":"Chest Burn, Acidity, Loss Of Appetite, Gastric ",
+              "quantity":"60gm"
+            },
+                {
+              "productName": "QURS MUSAKIN",
+              "companyName": "Hermas",
+              "category":  "Qurs",
+              "price": 42.00,
+              "description":"Hypertension, Stress & Anxiety",
+              "quantity":"30"
+            },
+                {
+              "productName": "SHAMINO",
+              "companyName": "Hermas",
+              "category":  "Habbe",
+              "price": 140.00,
+              "description":"Improve Cholestrol Metabolism & Digestion",
+              "quantity":"60"
+            },
+                {
+              "productName": "HAB-E-MOHAZZIL",
+              "companyName": "Hermas",
+              "category":  "Habbe",
+              "price": 110.00,
+              "description":"Obesity",
+              "quantity":"60"
+            },
+                {
+              "productName": "DE HUMMA",
+              "companyName": "Hermas",
+              "category":  "Tablet",
+              "price": 65.00,
+              "description":"Specific & Non Specific Fever",
+              "quantity":"30"
+            },
+                {
+                  
+              "productName": "SUKONN PILLS",
+              "companyName": "Hermas",
+              "category":  "Habbe",
+              "price": 85.00,
+              "description":"Hypertension",
+              "quantity":"60"
+            },
+            {
+              "productName": "HAPPY MORNING",
+              "companyName": "Auliya",
+              "category":  "Capsule",
+              "price": 125.00,
+              "description":"Constipation And Heaviness Of Stomach",
+              "quantity":"30"
+            },
             {
               "productName": "MAJUN ITRILAAL",
               "companyName": "Hermas",
@@ -52,14 +182,6 @@
                 "price": 94.00,
                 "description":"Support Hair Growth",
                 "quantity":"100 ml"
-            },
-            {
-                "productName": "Neem oil",
-                "companyName": "Kabeer",
-                "category": "Supplements",
-                "price": 20.50,
-                "description": "Neem extract capsules for immunity support.",
-                "quantity": "200ml"
             }
             
         ]
