@@ -36,7 +36,7 @@ function displayCart() {
         <button onclick="removeFromCart(${index})">Remove</button>
       </div>
       <hr>
-    `;
+    `; 
   });
 
   document.getElementById("grandTotal").innerText = "Total: ₹" + total.toFixed(2);
@@ -109,7 +109,7 @@ function displayCheckout() {
     `;
   });
 
-  document.getElementById("checkoutTotal").innerText = "Total: ₹" + total.toFixed(2);
+  document.getElementById("checkoutTotal").innerText = "Total: ₹" + total.toFixed(2) + "" + " + Shipping charges (according to your location)";
 
   if (orderListField) orderListField.value = orderDetails.join("\n");
   if (orderTotalField) orderTotalField.value = "₹" + total.toFixed(2);
